@@ -10,23 +10,29 @@
   <title>Random User</title>
 </head>
 <body>
-  <header class="container">
+  <!-- Header -->
+  <header class="header container">
     <h1 class="heading">Random User</h1>
     <p class="sub-heading">Press the button to get a random user</p>
   </header>
-  <div class="container">
+
+  <div class="main-content container">
+    <!-- Contet containing the random user -->
     <div class="user-card">
       <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="random-user" class="user-img">
+      <!-- Random User Information Content -->
       <div class="user-info">
         <p>My <span class="info"> name</span> is</p>
         <p class="result">John Smith</p>
       </div>
+      <!-- Information Buttons -->
       <div class="buttons">
-        <button type="button" class="btn fas fa-user fa-2x" data-label="name"></button>
+        <button type="button" class="btn fas fa-user fa-2x active" data-label="name"></button>
         <button type="button" class="btn fas fa-calendar-alt fa-2x" data-label="age"></button>
         <button type="button" class="btn fas fa-envelope fa-2x" data-label="email"></button>
         <button type="button" class="btn fas fa-map fa-2x" data-label="address"></button>
       </div>
+      <!-- Search for a Random User -->
       <button class="random-btn">click for a random user</button>
     </div>
   </div>

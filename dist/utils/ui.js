@@ -2,6 +2,7 @@
 
 import get from "./getElement.js";
 import Fetch from "./fetch.js";
+import remove from "./removeActive.js"
 
 class UI {
   constructor() {
@@ -21,10 +22,13 @@ class UI {
   async displayUser() {
     const data = new Fetch();
     const user = await data.getData();
+    remove(this.btns);
+    this.btns[0].classList.add("active");
     this.userImg.src = user.img;
     this.userResult.textContent = user.name;
     this.btns.map((btn) => {
       btn.addEventListener("click", () => {
+        remove(this.btns);
         btn.classList.add("active");
         const label = btn.dataset.label
         this.userInfo.textContent = label;
