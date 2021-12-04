@@ -2,3 +2,85 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background: #242333;
+  color: #eeeeee; }
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.header {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  border-bottom: #eeeeee 2px solid;
+  margin-bottom: 1rem; }
+  .header .heading {
+    font-size: 2.5rem; }
+  .header .sub-heading {
+    font-size: 1.2rem; }
+
+.main-content {
+  height: 80%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  align-items: center; }
+  .main-content .user-card {
+    background: #eeeeee;
+    border-radius: 10px;
+    height: 75%;
+    width: 80%;
+    border: black solid 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center; }
+    .main-content .user-card .user-img {
+      margin-bottom: 1.2rem;
+      height: 200px;
+      border-radius: 50%;
+      border: #01B0D3 solid 5px; }
+    .main-content .user-card .user-info {
+      color: #242333;
+      font-size: 1.3rem; }
+    .main-content .user-card .buttons {
+      margin-top: 1rem;
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 1rem; }
+      .main-content .user-card .buttons .btn {
+        color: #242333;
+        background: none;
+        border: none;
+        transition: all 0.2s; }
+        .main-content .user-card .buttons .btn:hover {
+          color: #01B0D3;
+          cursor: pointer; }
+      .main-content .user-card .buttons .active {
+        color: #01B0D3; }
+    .main-content .user-card .random-btn {
+      margin-top: 1rem;
+      border-radius: 10px;
+      border: none;
+      padding: 0.5rem 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #eeeeee;
+      background: #242333; }
+      .main-content .user-card .random-btn:hover {
+        cursor: pointer; }
